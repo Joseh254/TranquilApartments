@@ -1,0 +1,72 @@
+.schedule_a_visit {
+    color: white;
+    padding: 3rem;
+}
+
+.schedule_a_visit form {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2c30;
+    align-items: center;
+    justify-content: center;
+    /* border: solid red 2px; */
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(1, 1, 29);
+    color: orange;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+#firstname,#lastname, #emailaddress,#password{
+    display: flex;
+    width: 50rem;
+}
+.schedule_a_visit input::placeholder {
+    color: orange;
+}
+
+
+
+submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 29);
+    color: #8b8b88;
+    padding: 1rem;
+    border: 2px pink solid;
+    border-radius: 25px;
+    /* margin-left: 25%; */
+    width: 20rem;
+}
+
+.errorp {
+    color: white;
+    font-size: 0.8rem; 
+    margin-top: 0.5rem;
+}
+/* responsiveness */
+@media screen and ( max-width:40.0625em) {
+    #firstname,#lastname, #emailaddress,#password{
+        display: flex;
+        width: 25rem;
+    }
+  
+}
+@media screen and (max-width:21.875em){
+    #firstname,#lastname, #emailaddress,#password{
+        display: flex;
+        width: 15rem;
+    }
+    /* submit-btn{
+    width:3rem;
+    margin:0;
+    display: none;
+   } */
+}
+

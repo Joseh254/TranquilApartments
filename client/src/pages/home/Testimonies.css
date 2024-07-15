@@ -1,0 +1,46 @@
+.testimonies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+.testimonies img{
+    width: 100%;
+}
+.testimony{
+    width: 25rem;
+    background-color: grey;
+    padding: 1rem;   
+    transition: all .5s ease-out;
+    box-shadow: 4px 8px 9px 1px #eb3e05;
+}
+.testimony h3{
+    text-transform: capitalize;
+}
+.testimony:hover{
+background-color: rgb(182, 169, 169);
+}
+.Testimonies_intro, h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.paragraph{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(245, 240, 240);
+    width:100%;
+    color:black;
+    align-items: center;
+    padding: 2.5rem;
+}
+.Testimonies_intro,h2{
+    color:rgb(241, 136, 7);
+}
+@media screen and (max-width:39.4375em) {
+.testimony p{
+    display:none;
+}    
+}

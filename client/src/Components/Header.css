@@ -1,0 +1,165 @@
+.nav{
+    background-color: #222326;     
+    display:flex;
+    flex-direction: row;
+    gap:5rem;
+    justify-content: space-around;
+ 
+   /* position:fixed; */
+    width:100%;
+
+    
+}
+.nav a{
+    color:#cf8e0c;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav a:hover{
+    color:#a7894d;
+text-decoration:underline;
+
+}
+
+.phoneicon{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    color:rgb(245, 227, 227);
+}
+
+
+
+.leftnav{
+    display:flex;
+    flex-direction: row;
+    gap:5rem;
+    margin-top: 7rem;
+}
+.rightnav{
+    display:flex;
+    flex-direction: row;
+    gap:5rem;
+    margin-top: 7rem;
+}
+.logo img{
+border-radius: 50%;
+margin-top: .2rem;
+scale:.7;
+/* height: 8rem;
+width:9rem; */
+padding-bottom: 2rem;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 61.3125em ) {
+  .nav{
+   
+    gap:2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:3rem;
+  }  
+  .leftnav{
+    gap:2rem;
+  }
+  .rightnav{
+    gap:2rem;
+  }
+}
+ @media screen and ( max-width:58.6875em){
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+      
+    }
+.nav img{
+    scale:.5;
+}
+@media screen and (max-width:41.3125em){ 
+    .nav{
+        gap:.1rem;
+    }
+
+     }
+     @media screen and (max-width:39.375em){
+
+        .nav img{
+            scale: .4;
+            /* display: none; */
+        }
+        .nav{
+            gap:1rem;
+        }
+       
+    }
+    @media screen and (max-width:36em){
+       .nav {
+        gap:.01rem;
+       }
+    }
+
+    @media screen and (max-width:38.8125em){
+        .nav {
+         gap:.1rem;
+         padding:3rem;
+        }
+        .nav a{
+            font-size: 9.9px;
+        }
+     }
+
+ 
+     @media screen and  ( max-width: 35.9375em){
+        .nav{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav img{
+            /* display: none; */
+            scale:.4;
+        }
+     }
+@media screen and (max-width:30.8125em) {
+    .nav{
+    
+        justify-content: center;
+      
+    }  
+    .rightnav{
+        flex-direction: column
+    }
+    .leftnav{
+        flex-direction: column
+    }
+}
+@media screen and (max-width:22.5em) {
+    .nav{
+       display: flex;
+       flex-direction: column;
+      
+    }
+   
+    
+    
+}
+@media screen and (max-width:22.375em){
+  .nav img{
+    display:none;
+}
+.nav{
+    gap:0rem;
+}
+}
+ }

@@ -1,0 +1,177 @@
+.contacthero{
+    background-image: url(../../assets/hero1crop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:15rem;
+}
+.contacticons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:#222326; 
+    color:bisque;
+    padding: 3rem;
+} 
+.contacticons img{
+    /* scale:.4 */
+    width:3rem;
+}
+.contacticons p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: .1px white solid;
+    padding: 3rem 9rem;
+}
+.contacticons .p3{
+    border-right: 2px #222326 solid;
+}
+.map iframe{
+width: 100%;
+}
+.contactform{
+    background-clip: url(../../assets/form\ contactformvideo.mp4);
+    
+}
+.contactform {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.form-content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adjust text color as needed */
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: to make the text more readable */
+    border-radius: 8px;
+}
+.cf{
+    display: flex;
+    flex-direction: row;
+}
+.contactform{
+    
+    display:flex;
+    flex-direction: column;
+
+    color:blanchedalmond;
+   
+}
+.contactform input{
+padding:1rem;
+width:50rem;
+background-color: rgb(10, 10, 41);
+color:white;
+border-bottom:1px pink solid;
+border-right:1px pink solid;
+border-left:1px pink solid;
+font-size: 1.5rem;
+
+}
+textarea{
+    width:50rem;
+}
+.contactform label{
+    padding-right:35rem;
+}
+.formcolor{
+    background-color: #222326;
+}
+
+.contacthero h2{ 
+    background-color: #222326;
+    padding:2rem 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }
+    @media screen and (max-width:34.8125em){
+        .contacthero  h2{
+        display: none;
+    }
+}
+@media screen and (max-width:67.1875em) {
+    .contacticons {
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+}
+
+
+.schedule_a_visit {
+    color: white;
+    padding: 3rem;
+}
+
+.schedule_a_visit form {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2c30;
+    align-items: center;
+}
+
+.schedule_a_visit input {
+    width: 60rem;
+    padding: 1rem;
+    background-color: rgb(1, 1, 29);
+    color: orange;
+    font-size: 1.6rem;
+    font-weight: 9rem;
+    margin-top: 2rem;
+}
+
+.schedule_a_visit input::placeholder {
+    color: orange;
+}
+
+textarea {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgb(1, 1, 29);
+    color: orange;
+    font-size: 1.6rem;
+    font-weight: 9rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 1, 29);
+    color: #8b8b88;
+    padding: 1rem;
+    border: 2px pink solid;
+    border-radius: 25px;
+    margin-left: 25%;
+    width: 20rem;
+}
+
+.errorp {
+    color: white;
+    font-size: 0.8rem; /* Reduced font size */
+    margin-top: 0.5rem;
+}
+@media screen and (max-width:38.4375em){
+  textarea{
+    display: none;
+  }  
+  button{
+    width:9rem;
+  }
+}

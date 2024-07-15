@@ -1,0 +1,69 @@
+
+.vision{
+    display: flex;
+    flex-direction: row;   
+    padding: 3rem;
+    margin-top: 3rem;
+    box-shadow: 10px 10px 5px 0px rgba(217,35,90,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(217,35,90,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(217,35,90,0.75);
+    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+}
+
+.mission img{
+    scale:.6;
+    
+    
+}
+
+
+
+
+/* .mission{ */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* padding: 0 6rem; */
+/* } */
+/* .vision{ */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+/* } */
+/* .mission img{ */
+    /* scale:.1; */
+    /* margin-top: -9rem; */
+/* } */
+/* .mission p{ */
+    /* padding-top: 9rem; */
+/* } */
+/* .missionimg{ */
+    /* border-radius: 50%; */
+    
+    
+/* } */
+.amenities{
+    display: flex;
+    flex-direction: column;
+}
+.ar{
+    /* width:20%; */
+    display:block;    
+    justify-content: space-around;
+    padding:0 9rem;
+}
+/* .al{
+    width:50%;
+    padding: 0 4rem;
+
+   
+}
+.ab{
+    display: flex;
+    flex-direction: row;
+} */
+@media screen and (max-width:31.4375em) {
+    .vision{
+        flex-direction: column;
+    }
+}

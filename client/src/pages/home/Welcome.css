@@ -1,0 +1,32 @@
+.welcome{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #222326;
+    color:rgb(211, 198, 198);
+ 
+}
+.welcome img{
+   height:50rem;
+   width:100%;
+   padding: 2rem;
+   border:.1px #222326 ;
+   
+    
+}
+.welcome_paragraph{
+    padding:10rem;
+}
+.welcome_paragraph h2{
+    color:rgb(218, 168, 75);
+    
+}
+@media screen and (max-width:51.8125em){
+   .welcome{
+    display: flex;
+    flex-direction: column;
+   } 
+   .welcome_paragraph{
+    display: none;
+   }
+}

@@ -1,0 +1,136 @@
+.heroproperties{
+    background-image: url('../../assets/hero1crop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:19rem;
+}
+.booked{
+/* text-decoration: line-through; */
+font-size: 3rem;
+color:red;
+font-weight: 100;
+
+}
+.dwelling1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #222326;
+    padding:3rem
+  }
+  
+  .dcard {
+    flex: 1 1 calc(33.333% - 2rem); /* Adjust width based on the desired number of columns */
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .dcard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .dcard h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .dcard p {
+    margin: 0.5rem 0;
+  }
+  
+  .dcard .vacant {
+    color: green;
+  }
+  
+  .dcard .booked {
+    color: red;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .dcard {
+      flex: 1 1 calc(50% - 2rem); /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dcard {
+      flex: 1 1 100%; /* Full width on very small screens */
+    }
+  }
+  
+.btn button{
+    
+        background-color: red;
+        padding: 1rem;
+        /* height:1rem; */
+        border-radius: 25px;
+        width: 18rem;
+        }
+        .btn a{
+            color:white;
+            text-decoration: none;
+        }
+
+
+.vacant{
+    font-size: 3rem;
+    color:red; 
+    font-weight: 100; 
+}
+.heroproperties h2{ 
+background-color: #222326;
+padding:2rem 1rem;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+@media screen and (max-width:34.8125em){
+    .heroproperties h2{
+        display: none;
+    }
+}
+.cart {
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .cart h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cart button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .cart button:hover {
+    background-color: #d32f2f;
+  }
+  

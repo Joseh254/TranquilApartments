@@ -1,0 +1,52 @@
+.schedule_a_visit {
+    color: white;
+    padding: 3rem;
+}
+
+.schedule_a_visit form {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2c30;
+    align-items: center;
+}
+
+.schedule_a_visit input {
+    width: 60rem;
+    padding: 1rem;
+    background-color: rgb(1, 1, 29);
+    color: orange;
+    font-size: 1.6rem;
+    font-weight: 9rem;
+    margin-top: 2rem;
+}
+
+.schedule_a_visit input::placeholder {
+    color: orange;
+}
+
+textarea {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgb(1, 1, 29);
+    color: orange;
+    font-size: 1.6rem;
+    font-weight: 9rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 1, 29);
+    color: #8b8b88;
+    padding: 1rem;
+    border: 2px pink solid;
+    border-radius: 25px;
+    margin-left: 25%;
+    width: 20rem;
+}
+
+.errorp {
+    color: white;
+    font-size: 0.8rem; /* Reduced font size */
+    margin-top: 0.5rem;
+}

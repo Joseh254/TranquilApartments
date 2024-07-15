@@ -1,0 +1,47 @@
+
+<!-- saved from url=(0048)https://dashboard.visme.co/help-popup-v2/ws.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+var worker = null;
+var port = null;
+
+function onSocketMessage(ev) {
+    window.parent.postMessage({app: 'sw-proxy', type: 'message', payload: ev.data}, '*');
+}
+
+function initWorker() {
+    if (!window.parent) return;
+    if (location.hostname != 'dashboard.visme.co' && location.hostname != 'localhost') return;
+    if (window.SharedWorker && location.hostname != 'localhost') {
+        worker = new SharedWorker('https://dashboard.visme.co/v2/eb-worker.js');
+        port = this.worker.port;
+        port.addEventListener('message', onSocketMessage);
+        port.start();
+    } else if (window.Worker) {
+        worker = new Worker((location.hostname === 'localhost') ? '/eb-worker.js' : 'https://dashboard.visme.co/v2/eb-worker.js');
+        port = this.worker;
+        port.addEventListener('message', onSocketMessage);
+    } else {
+        return false;
+    }
+
+
+    addEventListener('beforeunload', () => {
+        port.postMessage({ event: 'disconnect' });
+    });
+
+    return true;
+}
+
+if (initWorker()) {
+    addEventListener('message', (ev) => {
+        if (!ev.data) return;
+        if (ev.data.app !== 'sw-proxy') return;
+        if (ev.data.type === 'send') {
+            port.postMessage(ev.data.payload);
+        }
+    });
+
+    window.parent.postMessage({app: 'sw-proxy', type: 'load'}, '*');
+}
+</script>
+</head><body></body></html>

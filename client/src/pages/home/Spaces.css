@@ -1,0 +1,134 @@
+.grey{
+    background-color: grey;
+    color:grey;
+    display:flex;
+    flex-direction: row;
+    color:rgb(228, 224, 238);
+    justify-content: space-between;
+    padding: 2rem;
+    font-weight: 900;
+    
+}
+select{
+    padding: 1rem;
+    width:30rem;
+}
+.spaces{
+    background-color: #222326;
+    color:white;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.spaces h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* .heroalbumtop {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+} */
+
+.our_spaces_form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.our_spaces_form label, .our_spaces_form select {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.our_spaces_form select {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-size: 100% 100%;
+}
+
+.dwelling1{
+    display:flex;
+    flex-direction: row;
+    /* gap:10px; */
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    /* border: solid red; */
+    
+}
+
+.spaces{
+    display: flex;
+    flex-direction: column;
+    /* border: solid green; */
+
+    /* gap:4rem; */
+}
+.dwelling1 img{
+    width: 100%;
+   
+    
+}
+.dwelling2 img{
+   max-width:  100%;
+}
+.dwelling2{
+    display:flex;
+    flex-direction: row;  
+    width: 98%;
+    justify-content: space-around;
+    align-items: center;
+}
+.bd3{
+    /* width:10%; */
+margin-top:12rem ;
+}
+.dcard{
+    width:32%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.dcard h2{
+    color:rgb(243, 198, 84);
+}
+/* .dwelling{
+    display:flex;
+    flex-direction: column;
+}
+.dwelling1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+    align-items: center;
+    border: red solid;
+    
+}
+.dwellingcards{
+    border: solod red;
+}
+.cards{
+    border: green solid;
+} */
+@media screen  and (max-width:47.9375em){
+    .dwelling1,.dwelling2{
+    display:flex;
+    flex-direction: column;
+   } 
+   .dwelling1 img, .dwelling2 img{
+    width:100%;
+   }
+   .dcard{
+    width:100%;
+   }
+}

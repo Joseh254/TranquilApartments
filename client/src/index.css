@@ -1,0 +1,27 @@
+/*Reset all*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  max-width: 112.5em;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}/* avoids words going out of their parent containers*/
